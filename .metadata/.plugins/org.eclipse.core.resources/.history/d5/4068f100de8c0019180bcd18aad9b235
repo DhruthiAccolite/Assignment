@@ -1,0 +1,10 @@
+package com.java1;
+
+import java.sql.Time;
+
+public class Call {
+	public int phoneNumber;
+	public Time startTime;
+	public Time endTime;
+	
+}

@@ -1,0 +1,7 @@
+package com.connect.dao;
+
+public interface CustomerInterface {
+
+	void viewCustomers();
+
+}

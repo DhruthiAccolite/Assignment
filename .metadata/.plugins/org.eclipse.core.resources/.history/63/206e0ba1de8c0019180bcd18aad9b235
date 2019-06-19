@@ -1,0 +1,10 @@
+package com.java1;
+
+import java.time.LocalDateTime;
+
+public class Call {
+	public String phoneNumber;
+	public LocalDateTime startTime;
+	public LocalDateTime endTime;
+	
+}

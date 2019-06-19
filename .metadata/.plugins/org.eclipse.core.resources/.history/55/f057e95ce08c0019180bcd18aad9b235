@@ -1,0 +1,28 @@
+package com.java1;
+
+import java.time.LocalDateTime;
+
+public class Call {
+	public String phoneNumber;
+	public LocalDateTime startTime;
+	public LocalDateTime endTime;
+	public String getPhoneNumber() {
+		return phoneNumber;
+	}
+	public void setPhoneNumber(String phoneNumber) {
+		this.phoneNumber = phoneNumber;
+	}
+	public LocalDateTime getStartTime() {
+		return startTime;
+	}
+	public void setStartTime(LocalDateTime startTime) {
+		this.startTime = startTime;
+	}
+	public LocalDateTime getEndTime() {
+		return endTime;
+	}
+	public void setEndTime(LocalDateTime endTime) {
+		this.endTime = endTime;
+	}
+	
+}

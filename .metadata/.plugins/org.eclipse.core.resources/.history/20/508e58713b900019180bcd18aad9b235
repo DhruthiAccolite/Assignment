@@ -1,0 +1,8 @@
+package com.exception;
+
+public class ExceptionCatching {
+	public static void main(String args[]) {
+		ExceptionGeneration eg=new ExceptionGeneration();
+		
+	}
+}

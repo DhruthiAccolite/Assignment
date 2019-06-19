@@ -1,0 +1,25 @@
+package com.exception;
+
+import java.io.File;
+import java.io.FileNotFoundException;
+
+public class ExceptionGeneration {
+	public int ArithmeticExceptionGeneration() {
+		return 1/0;
+	}
+	public int ArrayExceptionGeneration() {
+		int a[]=new int[5];
+		return a[6];
+	}
+	public void FileNotFoundEXceptionGeneration() throws FileNotFoundException {
+		File f=new File("d://filenotfound.txt");
+		System.out.println(f.getName());
+	}
+	public static void main(String args[]) throws FileNotFoundException {
+		ExceptionGeneration eg=new ExceptionGeneration();
+		eg.ArithmeticExceptionGeneration();
+		eg.ArrayExceptionGeneration();
+		eg.FileNotFoundEXceptionGeneration();
+	}
+	
+}

@@ -1,0 +1,12 @@
+package com.learning.basic;
+
+public class ClassB implements ClassBInterface {
+
+	@Override
+	private void methodB() {
+		// TODO Auto-generated method stub
+		System.out.println("Mathod B");
+
+	}
+
+}

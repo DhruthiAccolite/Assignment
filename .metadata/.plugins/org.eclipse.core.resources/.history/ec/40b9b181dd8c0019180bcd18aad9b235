@@ -1,0 +1,8 @@
+package com.java1;
+
+public interface Telephone {
+	public int myPhoneNumber =0;
+	public void dial(int phoneNumber);
+	public void recieve(int phoneNumber);
+	public void reject(int phoneNumber);
+}

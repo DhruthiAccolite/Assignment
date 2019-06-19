@@ -1,0 +1,15 @@
+package com.connect.controller;
+
+import org.springframework.beans.factory.annotation.Autowired;
+
+import com.connect.dao.Customer;
+
+public class Controller {
+	
+	@Autowired
+	static
+	Customer c;
+public static void main(String[] args) {
+	System.out.println(c.viewCustomers());
+}
+}

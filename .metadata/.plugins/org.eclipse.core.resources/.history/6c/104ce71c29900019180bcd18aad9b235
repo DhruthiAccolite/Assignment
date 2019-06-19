@@ -1,0 +1,43 @@
+package com.fileIOserialization;
+
+import java.io.File;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Scanner;
+
+public class DeleteFiles {
+
+	public List<String> textFilesFinder(String path) {
+
+		File directory = new File(path);
+
+		List<String> textFiles = new ArrayList<String>();
+		for (File file : directory.listFiles()) {
+			if (file.getName().endsWith((".txt"))) {
+				textFiles.add(file.getName());
+			}
+		}
+		return textFiles;
+	}
+	
+	public void deleteTextFiles(List<String> textFiles) {
+		for(String fileName:textFiles) {
+		File file = new File(fileName);
+
+		if (file.delete()) {
+			System.out.println("File deleted successfully" +fileName);
+		} else {
+			System.out.println("Failed to delete the file"+fileName);
+		}
+		}
+	}
+	public static void main(String[] args) {
+		DeleteFiles listfile = new DeleteFiles();
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter the path in which you would like to list the Files(Example c:\\\\):");
+		String path = sc.next();
+		listfile.deleteTextFiles(listfile.textFilesFinder(path));
+	}
+
+
+}

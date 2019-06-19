@@ -1,0 +1,23 @@
+package com.learning.spring;
+
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.ConfigurableApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+import com.learning.basic.ClassA;
+
+public class FirstSpring {
+	public static void main(String[] args) {
+//		System.out.println("Main Method");
+//		ClassBInterface b=new ClassB();
+//		ClassA a=new ClassA(b);
+//		
+//		a.methodA();
+	
+		ApplicationContext context=new ClassPathXmlApplicationContext("beans.xml");
+		ClassA a=(ClassA) context.getBean("d");
+		a.methodA();
+		
+		((ConfigurableApplicationContext)context).close();
+	}
+}

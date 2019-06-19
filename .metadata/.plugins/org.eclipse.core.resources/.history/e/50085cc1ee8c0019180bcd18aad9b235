@@ -1,0 +1,29 @@
+package com.java1;
+
+public class Telephone2 implements Telephone{
+
+	@Override
+	public void dial(String phoneNumber) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void recieve(String phoneNumber) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void reject(String phoneNumber) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void listCalls() {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

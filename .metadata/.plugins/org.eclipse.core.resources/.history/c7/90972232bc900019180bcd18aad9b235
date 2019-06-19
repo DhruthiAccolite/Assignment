@@ -1,0 +1,8 @@
+package com.learning.spring;
+
+public class FirstSpring {
+	public static void main(String[] args) {
+		System.out.println("Main Method");
+		
+	}
+}

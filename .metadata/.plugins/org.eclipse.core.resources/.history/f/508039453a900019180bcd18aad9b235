@@ -1,0 +1,11 @@
+package com.exception;
+
+public class ExceptionGeneration {
+	public int ArithmeticExceptionGeneration() {
+		return 1/0;
+	}
+	public int ArrayExceptionGeneration() {
+		int a[]=new int[5];
+		return a[6];
+	}
+}

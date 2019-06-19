@@ -1,0 +1,12 @@
+package com.generics;
+
+public class MainClass {
+	public static void mian() {
+		Vehicle es=new Vehicle(10,"scooty es");
+		Vehicle duro=new Vehicle(10,"mahindra duro");
+		Vehicle rayz=new Vehicle(20,"yamaha rayz");
+		
+		es.compareTo(duro);
+
+	}
+}

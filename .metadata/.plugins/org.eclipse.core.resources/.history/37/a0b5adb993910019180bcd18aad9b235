@@ -1,0 +1,10 @@
+package com.connect.model;
+
+import java.util.Date;
+
+public class Movie {
+	private int movie_id;
+	private int movie_name;
+	private Date release_date; 
+	
+}

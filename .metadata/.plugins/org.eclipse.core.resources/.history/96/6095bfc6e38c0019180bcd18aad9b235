@@ -1,0 +1,10 @@
+package com.java1;
+
+public class Person {
+	public static void main(String args[]) {
+		Telephone1 mobile=new Telephone1();
+		mobile.dial("9738424864");
+		mobile.recieve("9738424864");
+		mobile.listCalls();
+	}
+}

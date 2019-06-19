@@ -1,0 +1,16 @@
+package com.learning.basic;
+
+public class ClassA {
+
+	//ClassBInterface b = new ClassB();
+	ClassBInterface b;
+	public ClassA(ClassBInterface b){
+		this.b=b;
+	}
+	public void methodA() {
+		// TODO Auto-generated method stub
+		System.out.println("Mathod A");
+		b.methodB();
+
+	}
+}

@@ -1,0 +1,25 @@
+package com.collections;
+
+import java.util.HashMap;
+import java.util.Scanner;
+
+public class frequency {
+	
+	
+	public static void main(String[] args) {
+		HashMap<Character,Integer> frequency =new HashMap<Character, Integer>();
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter the sentence");
+		String sentence=sc.next();
+		for(int i=0;i<sentence.length();i++) {
+			if(frequency.containsKey(sentence.charAt(i))) {
+				int f=frequency.get(sentence.charAt(i));
+				frequency.replace(sentence.charAt(i),f+1);
+			}
+			else {
+				frequency.put(sentence.charAt(i),1);
+			}
+		}
+		System.out.println("Frequency of each letter in the sentence"+frequency);
+	}
+}

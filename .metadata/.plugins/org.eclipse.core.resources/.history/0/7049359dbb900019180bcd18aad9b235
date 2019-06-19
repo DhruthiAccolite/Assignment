@@ -1,0 +1,10 @@
+package com.learning.basic;
+
+public class ClassA {
+
+	private void methodA() {
+		// TODO Auto-generated method stub
+		System.out.println("Mathod A");
+
+	}
+}

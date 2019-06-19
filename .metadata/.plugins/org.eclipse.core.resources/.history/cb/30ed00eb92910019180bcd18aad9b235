@@ -1,0 +1,7 @@
+package com.connect.model;
+
+public class Movie {
+	private int movie_id;
+	private int movie_name;
+	private Date release_date; 
+}

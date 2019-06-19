@@ -1,0 +1,21 @@
+package com.learning.spring;
+
+import java.applet.AppletContext;
+
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+import com.learning.basic.ClassA;
+import com.learning.basic.ClassB;
+import com.learning.basic.ClassBInterface;
+
+public class FirstSpring {
+	public static void main(String[] args) {
+//		System.out.println("Main Method");
+//		ClassBInterface b=new ClassB();
+//		ClassA a=new ClassA(b);
+//		
+//		a.methodA();
+	
+		AppletContext context=new ClassPathXmlApplicationContext("beans.xml");
+	}
+}

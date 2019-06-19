@@ -1,0 +1,30 @@
+package com.java1;
+
+public class Telephone1 implements Telephone{
+
+	public String myPhoneNumber="9898989999";
+	@Override
+	public void dial(String phoneNumber) {
+		System.out.println("Calling"+phoneNumber);
+		
+	}
+
+	@Override
+	public void recieve(String phoneNumber) {
+		System.out.println("Recieved call from"+phoneNumber);
+		
+	}
+
+	@Override
+	public void reject(String phoneNumber) {
+		System.out.println("Rejected call from"+phoneNumber);
+		
+	}
+
+	@Override
+	public void listCalls() {
+		
+		
+	}
+
+}

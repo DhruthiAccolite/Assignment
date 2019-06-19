@@ -1,0 +1,33 @@
+package com.exception;
+
+import java.io.FileNotFoundException;
+
+public class ExceptionCatching {
+	public static void main(String args[]) {
+		ExceptionGeneration eg=new ExceptionGeneration();
+		try {
+			eg.ArithmeticExceptionGeneration();
+			
+		}
+		catch(ArithmeticException e) {
+			System.out.println("Arithmetic Exception caught");
+		}
+		finally {
+			try {
+				eg.ArrayExceptionGeneration();
+				
+			}
+			catch(ArrayIndexOutOfBoundsException e){
+				System.out.println("Array Index Out Of Bounds Exception caught");
+			}
+			finally {
+				try {
+					eg.FileNotFoundEXceptionGeneration();
+				}
+				catch(FileNotFoundException e) {
+					System.out.println("File Not Found Exception caught");
+				}
+			}
+		}
+	}
+}

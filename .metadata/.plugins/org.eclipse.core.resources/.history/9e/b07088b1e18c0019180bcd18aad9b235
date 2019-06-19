@@ -1,0 +1,17 @@
+package com.java1;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class CallList {
+	List<Call> callList=new ArrayList<Call>();
+
+	public List<Call> getCallList() {
+		return callList;
+	}
+
+	public void setCallList(List<Call> callList) {
+		this.callList = callList;
+	}
+	
+}

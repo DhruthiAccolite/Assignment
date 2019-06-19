@@ -1,0 +1,5 @@
+package com.connect.model;
+
+public class Movie {
+
+}

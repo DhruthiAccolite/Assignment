@@ -1,0 +1,37 @@
+package com.java1;
+
+import java.time.LocalDateTime;
+import java.util.Random;
+
+public class Telephone1 implements Telephone{
+
+	public String myPhoneNumber="9898989999";
+	CallList callList=new CallList(); 
+	@Override
+	public void dial(String phoneNumber) {
+		System.out.println("Calling"+phoneNumber);
+		
+	}
+
+	@Override
+	public void recieve(String phoneNumber) {
+		System.out.println("Recieved call from"+phoneNumber);
+		Random r=new Random();
+		r.nextInt();
+		LocalDateTime t=LocalDateTime.now();
+		callList.add(new Call());
+	}
+
+	@Override
+	public void reject(String phoneNumber) {
+		System.out.println("Rejected call from"+phoneNumber);
+		
+	}
+
+	@Override
+	public void listCalls() {
+		
+		System.out.println(callList.toString());
+	}
+
+}

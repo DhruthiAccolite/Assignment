@@ -1,0 +1,13 @@
+package com.generics;
+
+import java.util.Comparator;
+
+public class Vehicle<T> implements Comparable<Vehicle>,Comparator<Vehicle>{
+	int milage;
+	String modelNo;
+	@Override
+	public int compareTo(Vehicle v) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+}
